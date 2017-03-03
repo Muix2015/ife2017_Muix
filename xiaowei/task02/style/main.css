@@ -39,13 +39,11 @@ body {
 .g-header nav ul {
     float: right;
     margin: 0;
-    color: #fff;
 }
 .g-header nav ul li {
-    display: inline-block;
+    float: left;
     line-height: 50px;
     margin: 0 1em;
-    /*list-style: inside;*/
 }
 .g-header nav ul li a {
     text-decoration: none;
@@ -58,6 +56,7 @@ body {
     box-shadow: 2px 2px 2px grey;
 }
 .g-aside {
+    margin-top: 2em;
     margin-right: 2em;
 }
 .g-m-article h5 {
@@ -117,9 +116,8 @@ span.grey-text {
     background-color: #ddd;
     font-weight: bold;
 }
-
 .g-aside h2 {
-    border-left: 3px solid #ccc;
+    border-left: 4px solid #ccc;
     padding: 5px 0 5px 10px;
     margin-bottom: 20px;
 }
