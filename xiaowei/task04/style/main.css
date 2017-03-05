@@ -1,0 +1,32 @@
+* {margin: 0; padding: 0; box-sizing: border-box;}
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.align-box {
+    width: 400px;
+    height: 200px;
+    background-color: #ccc;
+    position: relative;
+}
+.align-box .corner {
+    height: 50px;
+    width: 50px;
+    background-color: #fc0;
+}
+.align-box .corner1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom-right-radius: 100%;
+}
+.align-box .corner2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-top-left-radius: 100%;
+}
