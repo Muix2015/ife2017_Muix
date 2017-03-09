@@ -25,7 +25,7 @@
     width: 110px;
     height: 61px;
     color: #ffffff;
-    font-family: 'STHei', '黑体';
+    font-family: '黑体', 'STHei';
     text-align: left;
     vertical-align: bottom;
     padding-left: 5px;
@@ -33,7 +33,7 @@
 }
 .g-header .g-header-date {
     color: #d45d5c;
-    font-family: 'STHei', '黑体';
+    font-family: '黑体', 'STHei';
     position: absolute;
     right: 0;
     bottom: 5px;
@@ -90,7 +90,7 @@
 .art1-section1 {
     width: 40%;
     color: #767777;
-    font-family: 'STSong', '宋体';
+    font-family: '宋体', 'STSong';
 }
 .art1-section1 h3 {
     color: #418c59;
@@ -98,6 +98,7 @@
 .art1-section2 {
     width: 235px;
     color: #231815;
+    line-height: 20px;
     opacity: 0.7;
     filter: alpha(opacity = 70);
 }
@@ -116,8 +117,13 @@
     opacity: 0.7;
     filter: alpha(opacity = 70);
 }
+.art1-section3 p {
+    line-height: 20px;
+    vertical-align: text-top;
+}
 .article1-section-summary {
     float: left;
+    line-height: 20px;
     opacity: 0.7;
     filter: alpha(opacity = 70);
     margin: 15px 0;
@@ -140,33 +146,36 @@
     right: 0;
     width: 203px;
     border-top: 2px solid #cc8091;
+    padding-top: 5px;
 }
 .article1 aside h2 {
     font-size: 24px;
     font-weight: normal;
-    font-family: 'Microsoft Yahei', '微软雅黑';
+    font-family: '微软雅黑', 'Microsoft Yahei';
     font-variant: small-caps;
     text-transform: capitalize;
     text-decoration: underline;
-    line-height: 35px;
+    line-height: 30px;
+
 }
 .article1 aside > p {
     color: #676767;
-    font-family: 'STKaiti', '楷体';
+    font-family: '楷体', 'STKaiti';
 }
 .article1 aside p.num {
     font-size: 116px;
+    line-height: 116px;
     color: #75b96b;
-    font-family: 'Microsoft Yahei', '微软雅黑';
+    font-family: '微软雅黑', 'Microsoft Yahei';
     font-style: italic;
-    position: relative;
-    left: -20px;
+    font-weight: bold;
+    margin: 25px 0 25px -20px;
 }
 .art1-asd-css {
     position: relative;
     margin-top: -20px;
     color: #cc8091;
-    font-family: 'Microsoft Yahei', '微软雅黑';
+    font-family: '微软雅黑', 'Microsoft Yahei';
 }
 .asd-css-num {
     font-size: 55px;
@@ -190,7 +199,7 @@
 .art2-section1 {
     width: 415px;
     color: #767777;
-    font-family: 'STSong', '宋体';
+    font-family: '宋体', 'STSong';
     line-height: 16px;
     position: relative;
 }
@@ -201,13 +210,13 @@
 .art2-section1 hgroup h2:first-child {
     font-size: 42px;
     color: #11456b;
-    font-family: 'STHei', '黑体';
+    font-family: '黑体', 'STHei';
     /*height: 100px;*/
 }
 .art2-section1 hgroup span {
     font-size: 72px;
     color: #f5e327;
-    font-family: 'STHei', '黑体';
+    font-family: '黑体', 'STHei';
     font-style: italic;
     line-height: 85px;
 }
@@ -215,7 +224,7 @@
     font-size: 33px;
     color: #11456b;
     font-weight: bold;
-    font-family: 'STHei', '黑体';
+    font-family: '黑体', 'STHei';
     margin-top: 30px;
     margin-bottom: 25px;
 }
@@ -228,25 +237,153 @@
 .art2-section1 p.mark-down:first-letter {
     font-size: 70px;
     color: #f5e327;
-    font-family: 'Microsoft Yahei', '微软雅黑';
+    font-family: '微软雅黑', 'Microsoft Yahei';
     float: left;
     line-height: 70px;
     margin-right: 5px;
 }
-
 .art2-section1 img {
     width: 165px;
     height: 290px;
     float: right;
-    margin: 20px 0 20px 20px;
+    margin: 20px 8px 10px 20px;
 }
 .art2-section1:after {
     content: "";
     display: block;
     clear: both;
 }
-.art2-section2 {
+.tech-pic {
     width: 460px;
+    height: 260px;
+    padding: 0 1px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 20px;
+}
+.tech-pic img {
+    width: 100%;
+    height: 100%;
+}
+.tech-pic-masker {
+    width: 458px;
+    height: 61px;
+    position: absolute;
+    left: 1;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-left: 37px;
+    padding-top: 8px;
+}
+.tech-pic h3 {
+    height: 44px;
+    display: inline-block;
+    border-left: 3px solid #72b16a;
+    padding-left: 12px;
+    font-size: 26px;
+    color: #fff;
+    font-family: '微软雅黑', 'Microsoft Yahei';
+    line-height: 44px;
+    font-weight: normal;
+}
+.tech-pic p {
+    display: inline-block;
+    font-size: 14px;
+    font-style: italic;
+    color: #72b16a;
+    font-family: '微软雅黑', 'Microsoft Yahei';
+    padding-left: 5px;
+    letter-spacing: 140%;
+}
+.art2-section2 {
+    width: 459px;
+    height: 318px;
+    background-color: #edefd5;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.art2-section2 ul {
+    list-style: none;
+    font-size: 16px;
+    color: #5a5b5b;
+    font-family: '宋体', 'STSong';
+    margin: 25px 10px;
+}
+.art2-section2 .triangle {
+    position: relative;
+    top: -10px;
+    border: 5px solid #0e486b;
+    border-bottom-width: 10px;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    margin-right: 7px;
+}
+.art2-section2 ul li {
+    margin: 20px;
+}
+.art2-section2 ul .sp {
+    font-size: 12px;
+    float: right;
+    font-style: italic;
+    font-family: '宋体', 'STSong';
+}
+.chapterbox {
+    background-color: #d55f5b;
+    height: 160px;
+    width: 260px;
+    float: left;
+    color: #fff;
+    font-size: 21px;
+    font-family: '黑体', 'STHei';
+    line-height: 29px;
+    padding-top: 30px;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+.chapterbox .chap-num {
+    font-size: 110px;
+    line-height: 80px;
+    display: inline-block;
+    font-family: '微软雅黑', 'Microsoft Yahei';
+    border-right: 3px solid #fff;
+    float: left;
+    padding: 5px;
+    margin-right: 10px;
+}
+.chapterbox .chap-title {
+    font-style: italic;
+}
+.chapterbox .chap-text {
+    font-size: 12px;
+    line-height: 15px;
+}
+.hellobox {
+    font-size: 14px;
+    color: #5a5b5b;
+    font-family: '黑体', 'STHei';
+    line-height: 22px;
+    margin-top: 40px;
+    font-style: italic;
+    position: relative;
+    text-indent: 3em;
+}
+.hellobox span {
+    font-size: 72px;
+    color: #d45d5c;
+    font-style: normal;
+}
+.hellobox .l-sp {
+    position: absolute;
+    top: 20px;
+    left: 200px;
+}
+.hellobox .r-sp {
+    position: absolute;
+    bottom: -25px;
+    right: -25px;
 }
 .g-footer {
     width: 892px;
@@ -254,5 +391,5 @@
     margin: 0 auto;
     text-align: right;
     color: #d45d5c;
-    font-family: 'STHei';
+    font-family: '黑体', 'STHei';
 }
