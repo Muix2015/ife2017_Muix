@@ -11,10 +11,9 @@
 }
 .g-header {
     width: 892px;
-    height: 63px;
+    height: 62px;
     margin: 0 auto;
     border-bottom: 2px solid #938e8c;
-    padding-bottom: 5px;
     position: relative;
 }
 .g-header .g-header-title {
