@@ -5,9 +5,11 @@
     <title>muix的任务七：实现常见的技术产品官网的页面架构及样式布局</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
 </head>
 <body>
     <div class="wraper">
+        <a href="" name="top"></a>
         <header class="g-header">
             <div class="header-left">
                 <h2>新世界</h2>
@@ -69,13 +71,14 @@
                 <span></span>
                 <p>每个城市都有不同的活动信息，请自助查询您所需要了解的城市</p>
             </div>
-            <div class="select-box">
-                <select name="country" id="country" placeholder="国家">
+            <div class="select-group">
+                <!-- <select name="country" id="country" placeholder="国家" class="select-group">
                     <option value="china">中国</option>
                     <option value="america">美国</option>
                     <option value="england">英国</option>
                 </select>
-                <select name="province" id="province">
+                <select name="province" id="province" class="select-group">
+                    <option value="shengfen">省份</option>
                     <option value="beijing">北京市</option>
                     <option value="tianjin">天津市</option>
                     <option value="hebei">河北省</option>
@@ -83,11 +86,38 @@
                     <option value="neimonggol">内蒙古自治区</option>
                     <option value="liaoning">辽宁省</option>
                 </select>
-                <select name="city" id="city">
-                    <option value="city-1">城市1</option>
-                    <option value="city-2">城市2</option>
-                    <option value="city-3">城市3</option>
-                </select>
+                <select name="city" id="city" class="select-group">
+                    <option value="city-1">城市</option>
+                    <option value="city-2">城市</option>
+                    <option value="city-3">城市</option>
+                </select> -->
+
+                <div class="select">
+                    <div class="select-btn">中国</div>
+                    <ul>
+                        <li>中国</li>
+                        <li>美国</li>
+                    </ul>
+                </div>
+                <div class="select">
+                    <div class="select-btn">省份</div>
+                    <ul>
+                        <li>北京市</li>
+                        <li>天津市</li>
+                        <li>河北省</li>
+                        <li>陕西省</li>
+                        <li>内蒙古自治区</li>
+                        <li>辽宁省</li>
+                    </ul>
+                </div>
+                <div class="select">
+                    <div class="select-btn">城市</div>
+                    <ul>
+                        <li>城市</li>
+                        <li>城市</li>
+                    </ul>
+                </div>
+
                 <button type="submit" name="search">搜索</button>
             </div>
         </section>
@@ -161,9 +191,60 @@
                 <div class="triangle"></div>
             </div>
         </section>
-        <section class="section8"></section>
+        <section class="section8">
+            <div class="top-box">
+                <h3>成为我们的志愿者</h3>
+                <span></span>
+                <p>新世界的大家庭需要每一个爱生活的人加入，如果你够年轻,有梦想，有激情<br>那就不要犹豫，快来加入我们，称为改变所有人生活的人</p>
+            </div>
+            <div class="left-box">
+                <section>
+                    <h4>新世界志愿者协议</h4>
+                    <p>加入新世界志愿者的人员必须遵守中华人名共和国的相关法律法规，并且本着平等的原则……</p>
+                    <span>v more</span>
+                </section>
+                <section>
+                    <h4>新世界志愿者协议</h4>
+                    <p>新世界志愿者享受新世界内部所有资源共享的权利，并且享受所在城市新世界活动的优先参与资格</p>
+                    <span>v more</span>
+                </section>
+                <section>
+                    <h4>更多条款</h4>
+                    <span>v more</span>
+                </section>
+            </div>
+            <div class="right-box">
+                <form action="#" methon="post">
+                    <input type="text" name="username" class="form-control form-u-name" placeholder="姓名：">
+                    <input type="age" name="age" class="form-control form-age" placeholder="年龄：">
+                    <input type="telphone" class="form-control form-tel" name="telphone" placeholder="联系方式：">
+                    <input type="address" name="address" class="form-control form-adr" placeholder="联系地址：">
+                    <textarea name="dream-life" id="dream-life" cols="30" rows="10" placeholder="请简单描述您梦想的生活：" class="form-control form-textarea"></textarea>
+                    <button type="submit" class="form-control form-submit">提交申请</button>
+                </form>
+            </div>
+        </section>
         <footer class="g-footer">
-
+            <div class="main-footer">
+                <div class="contact-box">
+                    <h3>联系我们</h3>
+                    <p>为了更好地获取我们的产品资讯，您可以留下您的电子邮箱快速订阅我们的产品资讯<br>也可以通过以下方式关注我们的动态</p>
+                    <div class="email-box">
+                        <input type="email" id="email" class="email" placeholder="someone@email.com">
+                        <button type="submit">提交</button>
+                    </div>
+                    <ul>
+                        <li class="fa fa-qq fa-2x"></li>
+                        <li class="fa fa-weibo fa-2x"></li>
+                        <li class="fa fa-twitter fa-2x"></li>
+                        <li class="fa fa-dribbble fa-2x"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sub-footer">
+                <div class="copyright">@2016新世界</div>
+                <div class="back-to-top"><a href="#top">Back to top</a></div>
+            </div>
         </footer>
     </div>
 </body>
