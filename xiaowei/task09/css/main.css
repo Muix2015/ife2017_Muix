@@ -1,0 +1,46 @@
+/*global header part*/
+.g-header {
+    height: 60px;
+    background: #2189db url(../images/logo.png) no-repeat 5% 10px;
+    -webkit-background-size: 40px 40px;
+    background-size: 40px 40px;
+}
+
+.g-header .log-in {
+    font-size: 12px;
+    line-height: 60px;
+    color: #fff;
+
+    background: url(../images/login.png) no-repeat left center;
+    -webkit-background-size: 15px 15px;
+    background-size: 15px 15px;
+    padding-left: 20px;
+
+    float: right;
+    margin-right: 5%;
+
+    cursor: pointer;
+}
+
+.g-header input{
+    width: 315px;
+    height: 30px;
+
+    background: #fff url(../images/search.png) no-repeat 10px 5px;
+    -webkit-background-size: 20px 20px;
+    background-size: 20px 20px;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    padding-left: 40px;
+
+    float: right;
+    margin-right: 20px;
+    margin-top: 13px;
+
+    transition: width 1s ease;
+}
+
+.g-header input:hover {
+    width: 380px;
+}
+
