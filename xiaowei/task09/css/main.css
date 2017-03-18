@@ -1,3 +1,8 @@
+ul, li {
+    margin: 0;
+    padding: 0;
+}
+
 /*global header part*/
 .g-header {
     height: 60px;
@@ -44,3 +49,101 @@
     width: 380px;
 }
 
+/***********************/
+/*  wraper style part  */
+/***********************/
+.wraper {
+    width: 1280px;
+
+}
+
+/*  aside part  */
+aside {
+    width: 260px;
+    min-height: 1440px;
+
+    font-size: 14px;
+    background-color: #2a303d;
+
+    float: left;
+
+}
+
+.usr-box {
+    height: 150px;
+
+    color: #59697b;
+}
+
+.usr-img {
+    width: 60px;
+    height: 60px;
+
+    font-size: 0;
+    line-height: 60px;
+    text-align: center;
+
+    /*background-color: #b8bbbd;*/
+
+    border: 2px solid #b8bbbd;
+    border-radius: 50%;
+
+    float: left;
+    margin: 20px 20px 10px 50px;
+}
+
+.usr-img div {
+    width: 50px;
+    height: 50px;
+
+    font-size: 0;
+    line-height: 60px;
+
+    background-color: #b8bbbd;
+    border-radius: 50%;
+
+    margin: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.usr-name {
+    font-size: 16px;
+    line-height: 100px;
+    color: #b8bbbd;
+
+    margin-bottom: 10px;
+}
+
+.collection {
+    float: left;
+
+    padding-right: 40px;
+
+    border-right: 1px solid #59697b;
+
+    margin-left: 60px;
+}
+
+.fans {
+    float: left;
+    margin-left: 40px;
+}
+
+aside ul li {
+    line-height: 50px;
+    list-style-position: inside;
+    padding-left: 30px;
+    cursor: pointer;
+}
+
+aside > ul > li:hover {
+    background-color: #373d4c;
+}
+
+aside .current-item li{
+    line-height: 30px;
+}
+
+.ps-report {
+    list-style-image: url(../images/file_close.png);
+}
