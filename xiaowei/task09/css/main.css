@@ -147,3 +147,12 @@ aside .current-item li{
 .ps-report {
     list-style-image: url(../images/file_close.png);
 }
+
+/* main-plane style part */
+.main-plane {
+    width: 1020px;
+    min-height: 1440px;
+    background-color: #ededed;
+
+    margin-left: 260px;
+}
